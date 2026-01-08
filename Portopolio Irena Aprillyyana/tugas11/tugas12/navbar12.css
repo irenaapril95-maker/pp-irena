@@ -1,0 +1,204 @@
+/* ===============================
+   RESET & FONT
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ===============================
+   VARIABEL WARNA PINK
+   =============================== */
+:root {
+    --pink-bg: #ffe6f2;
+    --pink-main: #ff77b3;
+    --pink-soft: #ffb3d9;
+    --pink-dark: #5c2a5e;
+    --pink-card: #ffffff;
+    --shadow: 0 8px 20px rgba(92, 42, 94, 0.15);
+}
+
+/* ===============================
+   BODY
+   =============================== */
+body {
+    background: linear-gradient(180deg, var(--pink-bg), #ffffff);
+    min-height: 200vh;
+}
+
+/* ===============================
+   NAVBAR UTAMA
+   =============================== */
+.navbar {
+    position: sticky;
+    /* Navbar menempel saat scroll */
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 30px;
+    background: linear-gradient(90deg, var(--pink-soft), var(--pink-main));
+    box-shadow: var(--shadow);
+}
+
+/* ===============================
+   LOGO
+   =============================== */
+.logo a {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+/* ===============================
+   MENU UTAMA
+   =============================== */
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+/* ===============================
+   LINK MENU
+   =============================== */
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+/* ===============================
+   HOVER MENU
+   =============================== */
+.main-menu a:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* ===============================
+   DROPDOWN
+   =============================== */
+.dropdown-parent {
+    position: relative;
+}
+
+/* ===============================
+   SUBMENU
+   =============================== */
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+
+    min-width: 180px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+    padding: 8px 0;
+    z-index: 999;
+}
+
+/* ===============================
+   ITEM SUBMENU
+   =============================== */
+.submenu li a {
+    display: block;
+    color: var(--pink-dark);
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+/* ===============================
+   HOVER ITEM SUBMENU
+   =============================== */
+.submenu li a:hover {
+    background: var(--pink-bg);
+}
+
+/* ===============================
+   TAMPILKAN DROPDOWN SAAT HOVER
+   =============================== */
+.dropdown-parent:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ===============================
+   CTA BUTTON
+   =============================== */
+.nav-cta {
+    margin-left: 10px;
+}
+
+.cta-button {
+    background: white;
+    color: var(--pink-dark);
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 15px rgba(255, 119, 179, 0.35);
+}
+
+/* ===============================
+   HOVER CTA
+   =============================== */
+.cta-button:hover {
+    background: var(--pink-bg);
+    transform: scale(1.05);
+}
+
+/* ===============================
+   MAIN CONTENT
+   =============================== */
+main {
+    padding: 40px 30px;
+}
+
+main h1 {
+    color: var(--pink-dark);
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #444;
+}
+
+/* ===============================
+   RESPONSIVE (HP)
+   =============================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .main-menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-cta {
+        width: 100%;
+        text-align: center;
+    }
+}

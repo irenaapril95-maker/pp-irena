@@ -1,0 +1,197 @@
+/* ===============================
+   RESET DASAR
+   =============================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ===============================
+   VARIABEL WARNA PINK
+   =============================== */
+:root {
+    --pink-bg: #ffe6f2;
+    --pink-main: #ff77b3;
+    --pink-soft: #ffb3d9;
+    --pink-dark: #5c2a5e;
+    --pink-card: #ffffff;
+    --text-muted: #6b6b6b;
+    --shadow: 0 10px 25px rgba(92, 42, 94, 0.15);
+}
+
+/* ===============================
+   BODY
+   =============================== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--pink-bg), #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===============================
+   CONTAINER FORM
+   =============================== */
+.form-container {
+    background: var(--pink-card);
+    max-width: 650px;
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+/* ===============================
+   JUDUL
+   =============================== */
+.form-container h1 {
+    text-align: center;
+    color: var(--pink-dark);
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* ===============================
+   SUB JUDUL
+   =============================== */
+.form-container h2 {
+    color: var(--pink-main);
+    margin: 25px 0 10px;
+    font-size: 20px;
+}
+
+/* ===============================
+   GARIS PEMBATAS
+   =============================== */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, var(--pink-soft), var(--pink-main));
+    margin: 25px 0;
+    border-radius: 2px;
+}
+
+/* ===============================
+   LABEL & PARAGRAF
+   =============================== */
+label,
+p {
+    color: var(--pink-dark);
+    font-weight: 500;
+}
+
+/* ===============================
+   INPUT, SELECT, BUTTON
+   =============================== */
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 1px solid #f1c6dc;
+    font-size: 14px;
+    outline: none;
+}
+
+/* ===============================
+   INPUT KHUSUS (radio & checkbox)
+   =============================== */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    transform: scale(1.1);
+}
+
+/* ===============================
+   INPUT FOCUS
+   =============================== */
+input:focus,
+select:focus {
+    border-color: var(--pink-main);
+    box-shadow: 0 0 0 2px rgba(255, 119, 179, 0.25);
+}
+
+/* ===============================
+   INPUT DISABLED & READONLY
+   =============================== */
+input:disabled {
+    background: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+input:read-only {
+    background: #fff5fb;
+    border-style: dashed;
+}
+
+/* ===============================
+   BUTTON
+   =============================== */
+button {
+    background: linear-gradient(90deg, var(--pink-soft), var(--pink-main));
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-top: 10px;
+}
+
+/* ===============================
+   BUTTON HOVER
+   =============================== */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 119, 179, 0.35);
+}
+
+/* ===============================
+   BUTTON RESET KHUSUS
+   =============================== */
+button[type="reset"] {
+    background: #ffe0ee;
+    color: var(--pink-dark);
+    margin-left: 8px;
+}
+
+/* ===============================
+   FILE INPUT
+   =============================== */
+input[type="file"] {
+    padding: 8px;
+    background: #fff5fb;
+}
+
+/* ===============================
+   COLOR INPUT
+   =============================== */
+input[type="color"] {
+    padding: 4px;
+    height: 42px;
+    cursor: pointer;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .form-container h1 {
+        font-size: 26px;
+    }
+
+    .form-container h2 {
+        font-size: 18px;
+    }
+}
