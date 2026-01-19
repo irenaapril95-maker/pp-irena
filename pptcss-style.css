@@ -1,0 +1,53 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5e6ff, #e6d9ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container menu */
+.menu-tugas {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol / link tugas */
+.cta-button {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: #da689f;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.cta-button:hover {
+    background-color: #bd923b;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(106, 13, 173, 0.3);
+}
+
+/* Active / klik */
+.cta-button:active {
+    transform: scale(0.97);
+}

@@ -1,0 +1,123 @@
+/* ===============================
+   RESET & FONT DASAR
+   =============================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ===============================
+   WARNA TEMA PINK
+   =============================== */
+:root {
+    --pink-bg: #ffe6f2;
+    --pink-card: #ffffff;
+    --pink-main: #ff77b3;
+    --pink-soft: #ffb3d9;
+    --pink-dark: #5c2a5e;
+    --text-muted: #6b6b6b;
+    --shadow: 0 8px 20px rgba(92, 42, 94, 0.15);
+}
+
+/* ===============================
+   BODY
+   =============================== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--pink-bg), #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===============================
+   CARD UTAMA
+   =============================== */
+.list {
+    background: var(--pink-card);
+    padding: 30px 40px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+/* ===============================
+   JUDUL
+   =============================== */
+.list h1 {
+    color: var(--pink-dark);
+    margin-bottom: 20px;
+    font-size: 28px;
+    position: relative;
+}
+
+/* Garis lucu di bawah judul */
+.list h1::after {
+    content: "♡";
+    display: block;
+    margin-top: 6px;
+    color: var(--pink-main);
+    font-size: 18px;
+}
+
+/* ===============================
+   LIST TUGAS
+   =============================== */
+.list ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* ITEM LIST */
+.list li {
+    margin-bottom: 14px;
+}
+
+/* ===============================
+   LINK
+   =============================== */
+.list a {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--pink-dark);
+    background: var(--pink-bg);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(255, 119, 179, 0.25);
+}
+
+/* HOVER EFFECT */
+.list a:hover {
+    background: linear-gradient(90deg, var(--pink-soft), var(--pink-main));
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(255, 119, 179, 0.35);
+}
+
+/* ACTIVE */
+.list a:active {
+    transform: scale(0.97);
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 500px) {
+    .list {
+        padding: 25px 20px;
+    }
+
+    .list h1 {
+        font-size: 24px;
+    }
+
+    .list a {
+        font-size: 14px;
+    }
+}

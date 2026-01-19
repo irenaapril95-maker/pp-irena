@@ -1,0 +1,51 @@
+/* Element Selector */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+    color: #333;
+}
+
+/* ID Selector */
+#main-title {
+    border-bottom: 2px solid black;
+}
+
+/* Font Family */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Text Alignment */
+h1 {
+    text-align: center;
+}
+
+/* Font Weight & Style */
+p:not(.highlight) {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Text Decoration */
+a {
+    text-decoration: none;
+}
+
+/* Product Card */
+.product-card h2 {
+    color: #0056b3;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+#diskon {
+    text-decoration: underline;
+}

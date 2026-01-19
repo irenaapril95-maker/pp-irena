@@ -1,0 +1,58 @@
+/* =========================
+   TUGAS 1 – Selector Dasar
+========================= */
+
+/* Element Selector */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+    color: #333;
+}
+
+/* ID Selector */
+#main-title {
+    border-bottom: 2px solid black;
+}
+
+/* =========================
+   TUGAS 2 – Properti Teks
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p:not(.highlight) {
+    font-weight: bold;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   TUGAS 3 – Selector Lanjutan
+========================= */
+
+.product-card h2 {
+    color: #0056b3;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+#diskon {
+    text-decoration: underline;
+}
